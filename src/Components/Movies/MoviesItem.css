@@ -1,0 +1,53 @@
+.movie {
+  width: 250px;
+  border: 2px solid inherit;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin: 1rem;
+  background-color: #373b69;
+  position: relative;
+  overflow: hidden;
+}
+
+.movie img {
+  width: 100%;
+}
+
+.movie-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.movie-info h3 {
+  margin: 0px;
+  font-size: 0.9em;
+}
+
+.movie-info .vote-card {
+  border: 2px ridge rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  background-color: rgba(34, 30, 30, 0.4);
+  font-size: 0.6em;
+}
+
+.movie-over {
+  display: none;
+  position: absolute;
+  overflow: auto;
+  background-color: #ffff;
+  color: #22254b;
+  padding: 1rem;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transform: translateY(100%);
+  max-height: 100%;
+}
+.movie:hover {
+  cursor: pointer;
+}
+.movie:hover .movie-over {
+  transform: translateY(0%);
+  display: inline-block;
+}
